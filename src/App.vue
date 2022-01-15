@@ -106,7 +106,10 @@
           b-icon-arrow-right.skipBreak
         b-button.delete.time-btn(v-if="!this.breaker && this.items.length <= 0" title='沒有事項' @click="" disabled)
           img(src='./assets/icon/icon-cancel.svg')
-    b-col#right-list-section.vh-50.d-flex.flex-column-reverse.justify-content-end.col-12.col-md-6(:style='{display: takeabreak}')
+    b-col#right-list-section.vh-50.d-flex.flex-column-reverse.justify-content-end.col-12.col-md-6.overflow-hidden(:style='{display: takeabreak}')
+      div(v-if="!breaker && items.length === 0").d-flex.flex-column.justify-content-start.align-items-start.breakcontainer
+        h2.lp.text-e8.breakText 為了更有效率，
+        h2.lp.text-e8.breakText 請新增待辦事項。
       div.d-flex.list-container.align-items-center.position-relative(v-if="!breaker" v-for="(item, i) in items")
         div.circle-outer
           div.circle
