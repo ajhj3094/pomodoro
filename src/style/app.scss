@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  // font-family: "Fjalla One", sans-serif;
+}
+#app {
+  height: 100vh;
+  background: #304030;
+  overflow: hidden;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.lp {
+  letter-spacing: 0.025em;
+}
+
+#left-navbar {
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 100vh;
+  background: #e8e8e8 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: fixed;
+  z-index: 99999999999999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  .btns {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-out;
+  }
+  .btns:hover {
+    background: white;
+  }
+}
+.b-sidebar-body {
+  overflow: hidden !important;
+}
+.b-sidebar-header {
+  display: none !important;
+  height: 80px;
+}
+.list-outer {
+  padding-top: 80px;
+}
+.text-outer {
+  padding-top: 30px;
+  position: relative;
+  .form-control {
+    border: none;
+    border-radius: 40px;
+    height: 55px;
+    margin-top: 20px;
+    padding-left: 25px;
+    position: relative;
+    font-weight: 600;
+  }
+  .form-control:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .submit {
+    background: #f08448;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 57px;
+    padding: 5px 8px;
+  }
+  .submit:active,
+  .submit:hover {
+    background: #f07448 !important;
+    border: none;
+    box-shadow: none;
+  }
+  .submit:focus {
+    background: #f08448 !important;
+    border: none;
+    box-shadow: none;
+  }
+}
+.text-color {
+  color: #e8e8e8;
+  .opacity-50 {
+    opacity: 50%;
+  }
+}
+.b-sidebar-body {
+  padding: 0 50px;
+}
+.btn .b-icon.bi {
+  font-size: 200%;
+  vertical-align: middle;
+  border: none;
+}
+.btn .b-icon.bi:active {
+  border: 0;
+}
+
+#sidebar-1,
+#sidebar-2 {
+  padding-left: 80px;
+  background-color: #304030 !important;
+  font-weight: 600;
+}
+
+.doneNumber {
+  width: 100%;
+}
+
+.today {
+  width: 100%;
+  margin-right: 35px;
+}
+.thisWeek {
+  width: 100%;
+}
+.box {
+  margin-top: 1.2rem;
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+.box-child {
+  width: 50%;
+  height: 100%;
+}
+
+.number {
+  font-size: calc(35px + 4vw);
+  height: 75%;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 15px;
+  color: #6c9460;
+  font-family: "Fjalla One", sans-serif;
+}
+.finishedNumber {
+  color: #f08448;
+}
+.description {
+  height: 25%;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.line {
+  height: 80%;
+  width: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#row-content {
+  margin-left: 80px;
+  width: calc(100vw - 80px);
+  transition: all 300ms ease-in-out 0s;
+}
+.vh-50 {
+  height: 50vh;
+}
+.bgtomato {
+  max-width: none;
+  width: auto;
+  img {
+    width: 1200px;
+    // margin-right: 110px;
+    transition: all 300ms ease-in-out 0s;
+  }
+}
+
+.time {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 200px;
+  color: #e8e8e8;
+  margin-top: 30px;
+}
+.time-btn {
+  background: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #e8e8e8;
+  padding: 0;
+}
+.time-btn img {
+  vertical-align: bottom;
+}
+.mute {
+  background: #e8e8e857;
+}
+.playStop {
+  width: 65px;
+  height: 65px;
+  background: #e8e8e8;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.playStop:hover,
+.playStop:focus,
+.playStop:active {
+  background: #e8e8e8;
+  background-color: #e8e8e8 !important;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.slash {
+  width: 35px;
+  height: 2px;
+  background: #e8e8e8;
+  border-radius: 10px;
+  transform: rotate(46deg);
+  top: 22px;
+  left: 6px;
+}
+
+.h-line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background: #e8e8e8;
+}
+
+.circle {
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #e8e8e8;
+  cursor: pointer;
+  transition: all 200ms ease-out;
+  margin-top: -1px;
+  &:hover {
+    background: #5c8051;
+  }
+}
+
+.text-e8 {
+  color: #e8e8e8;
+}
+
+.text-e8_opacity {
+  color: #e8e8e8;
+  opacity: 0.5;
+}
+
+.btns-outer {
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-out;
+  margin-top: -5px;
+  cursor: pointer;
+  &:hover {
+    background: #5c8051;
+  }
+}
+
+.list-row {
+  // height: 75px;
+}
+
+.list-row p > span {
+  color: #f08448;
+  margin-left: 10px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+
+.list-row:not(:last-child) p > span {
+  display: none;
+}
+
+.editinput {
+  margin-top: -6px;
+  height: 35px;
+  color: #1e2124;
+  &:focus {
+    font-family: "Fjalla One", sans-serif;
+    color: #1e2124;
+    background-color: #fff;
+    border-color: #5c8051;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(92, 128, 81);
+  }
+}
+
+.check2 {
+  font-size: 20px;
+}
+
+.circle-com {
+  color: #e8e8e8;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 1px;
+  }
+}
+.todotab,
+.finishedtab {
+  transition: all 250ms ease-out; 
+  cursor: pointer;
+}
+
+#left-list-section {
+  z-index: 2;
+}
+
+#right-list-section {
+  padding-top: 115px;
+  z-index: 1;
+  .circle {
+    width: 24px;
+    height: 24px;
+  }
+  h1 {
+    font-size: 1rem;
+    line-height: 40px;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  .list-container {
+    margin-bottom: 24px;
+    // width: 40px;
+    // height: 40px;
+  }
+  .list-container:last-child {
+    margin-bottom: 50px;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .list-container:last-child .circle {
+    width: 40px;
+    height: 40px;
+  }
+  .list-container:last-child .circle-outer {
+    margin-right: 15px;
+  }
+  .circle-outer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    & + h1 {
+      color: #e8e8e8;
+      letter-spacing: 0.025em;
+    }
+  }
+}
+.chart {
+  margin-top: 70px;
+  width: 100%;
+}
+.chart > svg > g text[text-anchor]{
+  fill: #fff !important;
+  font-size: 1rem !important;
+  color: red !important;
+}
+.chart > svg > g text[alignment-baseline]{
+  fill: #fff !important;
+  font-size: 1rem !important;
+}
+.chart rect {
+  fill: #f08448 !important;
+  position: relative;
+}
+
+.small {
+  max-width: 600px;
+  margin:  150px auto;
+}
+
+.skipBreak {
+  font-size: 26px !important;
+}
+
+#bar-chart {
+  // Bug: 開啟和重整會消失，改 .vue 檔的 data 才會出現，這樣可以直接顯示
+  width: 100% !important;
+  height: 100% !important;
+}
+.list-container:last-child >.sm-circles-container {
+  width: 60px;
+  bottom: -13px;
+  left: 55px;
+}
+
+.list-container:not(:last-child) >.sm-circles-container {
+  display: none !important;
+}
+
+.sm-circles {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #DFE2B6;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+@media (max-width: 1200px) {
+  .time {
+    font-size: calc(35px + 10vw);
+  }
+  .list-outer > h1 {
+    font-size: calc(0.5rem + 2vw);
+  }
+  .list-outer>p:nth-child(2) {
+    margin-right: 2rem !important;
+  }
+  .box-child>.number {
+    font-size: calc(1rem + 4vw);
+  }
+  .box {
+    height: calc(60px + 10vw);
+  }
+  .today {
+    margin-right: 10px;
+  }
+  .box-child > .description {
+    font-size: calc(5px + 1vw);
+  }
+  .number {
+    height: 65%;
+  }
+  .bgtomato img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar-1,
+  #sidebar-2 {
+    width: 100% !important;
+    padding-left: 50px;
+  }
+  #left-navbar .btns,
+  #left-navbar {
+    width: 50px;
+  }
+  #row-content {
+    margin-left: 50px;
+    width: calc(100vw - 50px);
+  }
+  #left-list-section {
+    height: calc(100vh / 3);
+  }
+  #right-list-section {
+    padding: 18px 50px 0px;
+    height: calc(100vh / 3);
+  }
+  .bgtomato {
+    padding-left: 0;
+    padding-right: 0;
+    height: calc(100vh / 3);
+  }
+}
