@@ -39,8 +39,8 @@ export default {
 
   mounted () {
     this.renderChart(this.chartdata, this.options)
-    console.log(this.done)
-    console.log(this.chartdata.datasets[0].data[6])
+    // console.log(this.done)
+    // console.log(this.chartdata.datasets[0].data[6])
     this.chartdata.datasets[0].data[6] = this.done
   }
 }
