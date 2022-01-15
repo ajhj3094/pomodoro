@@ -76,6 +76,20 @@ body {
 .list-outer {
   padding-top: 80px;
 }
+.breakcontainer{
+  height: 100%;
+}
+.breakHeader{
+  font-size: 8rem !important;
+  line-height: unset !important;
+  height: unset !important;
+  margin-top: -40px !important;
+}
+.breakText{
+  height: unset;
+  font-size: 2.6rem;
+  margin-top: 6px;
+}
 .text-outer {
   padding-top: 30px;
   position: relative;
@@ -296,10 +310,6 @@ body {
   &:hover {
     background: #5c8051;
   }
-}
-
-.list-row {
-  // height: 75px;
 }
 
 .list-row p > span {

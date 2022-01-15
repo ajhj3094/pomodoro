@@ -107,7 +107,7 @@
         b-button.delete.time-btn(v-if="!this.breaker && this.items.length <= 0" title='沒有事項' @click="" disabled)
           img(src='./assets/icon/icon-cancel.svg')
     b-col#right-list-section.vh-50.d-flex.flex-column-reverse.justify-content-end.col-12.col-md-6(:style='{display: takeabreak}')
-      div.d-flex.list-container.align-items-center.position-relative(v-for="(item, i) in items")
+      div.d-flex.list-container.align-items-center.position-relative(v-if="!breaker" v-for="(item, i) in items")
         div.circle-outer
           div.circle
         h1 {{ item.name }}
@@ -116,7 +116,9 @@
           div.sm-circles
           div.sm-circles
           div.sm-circles.opacity-20
-        //- button(@click='weekupdate++') test
+      div(v-if="breaker").d-flex.flex-column.justify-content-start.align-items-start.breakcontainer
+        h1.lp.text-e8.breakHeader 休息，
+        h2.lp.text-e8.breakText 是為了下一次的努力。
     b-col.vh-50.bgtomato.d-flex.justify-content-center.align-items-end.col-12
       img(v-if="!breaker" src='./assets/icon/tomato--orange.svg' :style='{marginRight: moveToRight}')
       img(v-else src='./assets/icon/tomato--green.svg' :style='{marginRight: moveToRight}')
