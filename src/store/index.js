@@ -31,6 +31,9 @@ export default new Vuex.Store({
       if (state.items.length === 0) {
         state.timeleft = time
       }
+      if (data === parseInt(state.items.length)) {
+        state.timeleft = time
+      }
     },
     edititem (state, data) {
       state.items[data].edit = true

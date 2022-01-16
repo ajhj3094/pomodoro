@@ -224,6 +224,10 @@ export default {
         this.status = 0
         clearInterval(this.timer)
       }
+      if (index === parseInt(this.items.length)) {
+        this.status = 0
+        clearInterval(this.timer)
+      }
     },
     edititem (index) {
       this.$store.commit('edititem', index)
