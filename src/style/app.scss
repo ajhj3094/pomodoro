@@ -500,6 +500,10 @@ body {
   .bgtomato img {
     width: 100%;
   }
+  #__BVID__16 {
+    flex: none;
+    width: 45%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -520,12 +524,24 @@ body {
     height: calc(100vh / 3);
   }
   #right-list-section {
-    padding: 18px 50px 0px;
+    padding: 30px 50px 0px;
     height: calc(100vh / 3);
   }
   .bgtomato {
     padding-left: 0;
     padding-right: 0;
     height: calc(100vh / 3);
+  }
+  .breakText {
+    font-size: calc(1rem + 2vw);
+    margin-top: 0;
+  }
+  .breakHeader {
+    font-size: calc(1.5rem + 5vw) !important;
+    margin-top: 0 !important;
+  }
+  #__BVID__16 {
+    flex:none;
+    width: 45%;
   }
 }

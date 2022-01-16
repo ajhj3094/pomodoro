@@ -10,8 +10,8 @@ module.exports = {
     manifestOptions: {
       name: 'Pomodoro',
       short_name: 'Pomodoro',
-      theme_color: '#6C9460',
-      background_color: '#6C9460',
+      theme_color: '#e8e8e8',
+      background_color: '#e8e8e8',
       scope: './',
       start_url: './',
       display: 'standalone',
