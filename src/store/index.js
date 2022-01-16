@@ -28,6 +28,9 @@ export default new Vuex.Store({
     },
     delitem (state, data) {
       state.items.splice(data, 1)
+      if (state.items.length === 0) {
+        state.timeleft = time
+      }
     },
     edititem (state, data) {
       state.items[data].edit = true

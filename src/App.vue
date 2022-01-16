@@ -220,6 +220,10 @@ export default {
     },
     delitem (index) {
       this.$store.commit('delitem', index)
+      if (this.items.length === 0) {
+        this.status = 0
+        clearInterval(this.timer)
+      }
     },
     edititem (index) {
       this.$store.commit('edititem', index)
