@@ -10,7 +10,7 @@ export default {
         {
           label: '已完成',
           backgroundColor: '#f08448',
-          data: [0, 0, 0, 0, 0, 0, 2],
+          data: [0, 0, 0, 0, 0, 0, 0],
           categoryPercentage: 1.0,
           barPercentage: 0.3
         }
@@ -42,6 +42,11 @@ export default {
     // console.log(this.done)
     // console.log(this.chartdata.datasets[0].data[6])
     this.chartdata.datasets[0].data[6] = this.done
+  },
+  watch: {
+    done (value, oldValue) {
+      this.chartdata.datasets[0].data[6] = this.done
+    }
   }
 }
 </script>

@@ -19,7 +19,7 @@ export default new Vuex.Store({
   },
   mutations: {
     additem (state, data) {
-      state.items.push({
+      state.items.unshift({
         name: data,
         edit: false,
         model: data
@@ -80,12 +80,6 @@ export default new Vuex.Store({
     increasedone (state) {
       state.done++
     }
-    // items (state) {
-    //   state.todo++
-    // },
-    // finishedlist (state) {
-    //   state.done++
-    // }
   },
   actions: {
   },
